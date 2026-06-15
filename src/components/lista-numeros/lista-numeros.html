@@ -1,1 +1,6 @@
-<p>lista-numeros works!</p>
+<!-- Mostrar los numeros -->
+<ul>
+    @for (numero of listaNumerosServicio.listaNumeros; track $index){
+        <li>{{numero}}</li>
+    }
+</ul>

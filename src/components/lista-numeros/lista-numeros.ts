@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { ListaNumerosService } from '../../services/lista-numeros-service';
 
 @Component({
   selector: 'app-lista-numeros',
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './lista-numeros.html',
   styleUrl: './lista-numeros.css',
 })
-export class ListaNumeros {}
+export class ListaNumeros {
+  
+  public listaNumerosServicio = inject(ListaNumerosService);
+}

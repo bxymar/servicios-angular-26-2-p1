@@ -3,6 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
+// ng g s lista-numeros-service
+// ng g s cliente-service
+// ng g i cliente-interface
 export class ListaNumerosService {
 
   // Definir un array de numeros [29, 89, 31, 54.5]
